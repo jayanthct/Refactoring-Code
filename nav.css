@@ -1,53 +1,54 @@
-.nav{
-    background: linear-gradient(180deg, rgba(206, 206, 206, 0.10) 0%, rgba(12, 12, 12, 0.10) 100%);
-    backdrop-filter: blur(30px);
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 4%;
-    position: fixed;
-    border: 1px solid transparent;
-    z-index: 1;
-    top: 0;
-    left: 0;
+.nav {
+  background: linear-gradient(
+    180deg,
+    rgba(206, 206, 206, 0.1) 0%,
+    rgba(12, 12, 12, 0.1) 100%
+  );
+  backdrop-filter: blur(30px);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4%;
+  position: fixed;
+  border: 1px solid transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
-.nav_logo{
+/* .nav_logo img{
     width: 20%;
-
+} */
+.nav-center-section {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
-.nav-center-section{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+.nav-link {
+  text-decoration: none;
+  color: #919191;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.8px;
 }
-.nav-link{
-    text-decoration: none;
-    color: #919191;
-text-align: center;
-font-size: 18px;
-font-weight: 700;
-letter-spacing: 0.80px;
-
+.cart-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.cart-icon-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* width: 5%; */
-
+.cart-icon-container img{
+    width: 36px;
 }
-.cart-count{
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--orange);
-    position: absolute;
-    top: -10%;
-    right: -5%;
-
+.cart-count {
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  position: absolute;
+  top: -2px;
+  right: -6px;
 }

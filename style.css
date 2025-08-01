@@ -1,34 +1,35 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Kulim Park";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kulim Park";
 }
 
 :root {
-    --black: #0F0F0F;
-    --orange: #DD4911;
-    --white: #FFFFFF;
+  --black: #0f0f0f;
+  --orange: #dd4911;
+  --white: #ffffff;
 }
 
 body {
-    background-color: var(--black);
+  background-color: var(--black);
+  scroll-behavior: smooth;
 }
 
 .heading {
-    text-align: center;
-    font-size: 78px;
-    font-weight: 700;
-    line-height: 90.164%;
-    letter-spacing: 1.56px;
-    opacity: 0.6;
-    background: linear-gradient(180deg, #DBDBDB -69.64%, #323232 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 90.164%;
+  letter-spacing: 1.56px;
+  opacity: 0.6;
+  background: linear-gradient(180deg, #dbdbdb -69.64%, #323232 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-section{
-    padding: 2% 4%;
-    margin: 2% 0px;
+section {
+  padding: 2% 4%;
+  margin: 2% 0px;
 }
