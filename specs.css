@@ -1,0 +1,267 @@
+.specs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_row{
+    width: 80%;
+    display: flex;
+    gap: 12%;
+    justify-content: start;
+    align-items: center;
+}
+
+.leftsidespecs {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.spec_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.outerellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23vh;
+    /* height: 100px; */
+    height: 23vh;
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+
+}
+
+.innerellipse {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.spec_number {
+    color: #DD4911;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+}
+
+.spec_text {
+    color: #777;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+.leftspecsfirst {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+
+
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Instead of 100vw */
+    box-sizing: border-box;
+}
+
+.main {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.wave{
+    width: 22%;
+    position: absolute;
+    top: 65%;
+    left: 47%;
+}
+
+.headphone_image {
+    position: absolute;
+    height: 100%;
+}
+.outside_ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    backdrop-filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    /* border: 2px solid rgb(56, 53, 53);*/
+    border: 1px solid #FFFFFF1A;
+
+}
+
+.innerside_ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color:var(--orange);
+    border-radius: 50%;
+    border: 2px solid rgb(56, 53, 53);
+
+}
+
+.lowerside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 24px;
+    bottom: -17%;
+    left: -5%;
+
+}
+
+.upperside {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    top: -15%;
+    right: -37%;
+}
+
+.line1 {
+    width: 102px;
+    height: 2px;
+    /* border:2px solid white; */
+    background-color: white;
+    position: absolute;
+    left: 7%;
+    bottom: -12%;
+}
+
+.line2 {
+    width: 168px;
+    height: 2px;
+    /* border:2px solid white; */
+    background-color: white;
+    position: absolute;
+    left: 15.5%;
+    bottom: -1%;
+    transform: rotate(110deg);
+}
+
+.line3 {
+    width: 120px;
+    height: 2px;
+    /* border:2px solid white; */
+    background-color: white;
+    position: absolute;
+    right: 7.9%;
+    top: -4%;
+    transform: rotate(130deg);
+}
+
+.line4 {
+    width: 160px;
+    height: 2px;
+    /* border:2px solid white; */
+    background-color: white;
+    position: absolute;
+    right: -17%;
+    top: -10.2%;
+}
+
+.lowercircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 8%;
+    left: 34%;
+}
+
+.uppercircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 2%;
+    right: 25%;
+}
+
+.lowertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.uppertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+    position: relative;
+    left: -30%;
+}
+
+.lowertext_details1{
+    color: #FFF;
+font-size: 20px;
+font-weight: 400;
+}
+.lowertext_details2{
+    color: #777;
+font-size: 16px;
+font-weight: 400;
+
+}

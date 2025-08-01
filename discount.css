@@ -1,0 +1,43 @@
+
+.scroll-bar {
+    width: 75%;
+    overflow: hidden;
+    background: var(--orange);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    transform: translatex(15%);
+}
+
+.scroll-bar-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    white-space: nowrap;
+}
+
+
+.scroll-bar-text {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+
+
+/* --- Animation --- */
+
+.scroll-bar-content:hover {
+    animation: marquee 12s linear 5;
+    cursor: pointer;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

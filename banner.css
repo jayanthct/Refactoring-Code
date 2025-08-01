@@ -1,0 +1,63 @@
+.first-banner1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    width: 50%;
+}
+.banner11 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    color: var(--white);
+}
+
+.banner12 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+    opacity: 0.7;
+    color: var(--white);
+}
+
+.banner13 {
+    display: flex;
+    background-color: var(--orange);
+    width: 30%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(30px);
+}
+
+.banner-icon {
+    color: #BDBDBD;
+}
+
+.banner-cart-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    opacity: 0.8;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* padding: 0 2%; */
+    border-radius: 24px;
+    backdrop-filter: blur(30px);
+    gap: 24px;
+    
+}
+.banner-image{
+    width: 50%;
+}
