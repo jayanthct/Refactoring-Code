@@ -13,7 +13,7 @@
 
 body {
   background-color: var(--black);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .heading {
@@ -33,3 +33,20 @@ section {
   padding: 2% 4%;
   margin: 2% 0px;
 }
+h1{
+  cursor: pointer;
+
+
+}
+/* --- Animations --- */
+button,
+.button {
+  transition: transform 0.18s;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  transform: scale(1.06);
+}
+

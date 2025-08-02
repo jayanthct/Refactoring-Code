@@ -1,43 +1,33 @@
-
 .scroll-bar {
-    width: 75%;
-    overflow: hidden;
-    background: var(--orange);
-    height: 80px;
-    display: flex;
-    align-items: center;
-    transform: translatex(15%);
+  width: 75%;
+  overflow: hidden;
+  background: var(--orange);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transform: translateX(15%);
+  border-radius: 16px;
 }
 
 .scroll-bar-content {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  white-space: nowrap;
+  animation: marquee 16s linear infinite;
 }
-
 
 .scroll-bar-text {
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--white);
-}
-
-
-
-/* --- Animation --- */
-
-.scroll-bar-content:hover {
-    animation: marquee 12s linear 5;
-    cursor: pointer;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--white);
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

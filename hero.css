@@ -17,16 +17,15 @@
 }
 
 .wireless_text {
-    text-align: center;
-
-    -webkit-text-stroke: #919191 2px !important;
-    color: transparent;
-    font-family: "Kulim Park" !important;
-    font-size: 258px;
-    font-weight: 400;
-    line-height: 90.164%;
-    opacity: 0.5;
-    letter-spacing: -10px;
+text-align: center;
+-webkit-text-stroke-width: 3.65px;
+-webkit-text-stroke-color: var(--white);
+font-family: 'Koulen', sans-serif;
+font-size: 258px;
+font-weight: 400;
+line-height: 90.164%; 
+opacity: 0.5;
+color: transparent;
 }
 
 .feauture_text {
@@ -150,4 +149,16 @@
     flex-direction: column;
     gap: 48px;
     width: 100%;
+}
+
+/* --- Animations --- */
+
+/* A simple hover effect for scaling */
+.simple-hover {
+    transition: transform 0.3s cubic-bezier(.4, .2, .2, 1);
+    cursor: pointer;
+}
+
+.simple-hover:hover {
+    transform: scale(1.08);
 }

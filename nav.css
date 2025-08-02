@@ -16,9 +16,9 @@
   top: 0;
   left: 0;
 }
-/* .nav_logo img{
-    width: 20%;
-} */
+.nav_logo{
+  width: 5%;
+}
 .nav-center-section {
   width: 40%;
   display: flex;
@@ -51,4 +51,25 @@
   position: absolute;
   top: -2px;
   right: -6px;
+  color: var(--white);
 }
+
+/* Animations */
+.nav-link:hover {
+  color: var(--orange); /* or use any color you like */
+  text-shadow: 0 0 4px rgba(255,140,0,0.15);
+  transition: color 0.2s, text-shadow 0.2s;
+}
+.cart-count {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.cart-icon-container:hover .cart-count {
+  transform: scale(1.25) ;
+}
+.nav_logo:hover {
+  filter: brightness(1.13) drop-shadow(0 0 0px var(--orange));
+  cursor: pointer;
+}
+
