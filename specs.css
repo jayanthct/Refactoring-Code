@@ -1,247 +1,254 @@
 .specs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
 }
 
 .storm_image {
-    width: 36px;
+  width: 36px;
 }
 
 .second_row {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 64px;
 }
 
 .specs-leftside {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 32px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: fit-content;
+  padding: 0 16px;
+}
 
+.specs-rightside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--white);
+  position: relative;
+  height: 100%;
+}
+
+.headphone_image {
+  width: 80%;
 }
 
 .spec_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .outerellipse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 23vh;
-    /* height: 100px; */
-    height: 23vh;
-    background-color: rgba(255, 255, 255, 0.10);
-    border: 2px solid rgba(255, 255, 255, 0.10);
-    border-radius: 50%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23vh;
+  /* height: 100px; */
+  height: 23vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .innerellipse {
-    width: 75%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.10);
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    border-radius: 50%;
-
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .spec_number {
-    color: #DD4911;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0.64px;
+  color: #dd4911;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
 }
 
 .spec_text {
-    color: #777;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.32px;
+  color: #777;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
 }
-
-
 
 .leftspecsfirst {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    gap: 15%;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
 }
-
-
-.specs-rightside{
-    width: 65%;
-    color: var(--white);
-    position: relative;
-}
-
-.headphone_image {}
 
 .wave {
-    position: absolute;
-    width: 146px;
-    bottom: 180px;
-    left: 320px;
+  position: absolute;
+  width: 16%;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .outside_ellipse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 68px;
-    height: 68px;
-  background: rgba(255, 255, 255, 0.10);       
-  border: 1px solid rgba(255, 255, 255, 0.10); 
-  backdrop-filter: blur(30px);                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  border-radius: 50%; 
-
-
+  border-radius: 50%;
 }
 
 .innerside_ellipse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 28px;
-    height: 28px;
-    background-color: var(--orange);
-    border-radius: 50%;
-    border: 2px solid rgb(56, 53, 53);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  border: 2px solid rgb(56, 53, 53);
 }
 
 .specs-right-downside {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 16px;
-    position: absolute;
-    left: -111px;
-    bottom: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  position: absolute;
+  width: fit-content;
 
+  bottom: -82px;
+  left: 0;
 }
 
 .specs-right-upside {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 20px;
-    top: -55px;
-    right: -150px;
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+  top: -80px;
+  right: -140px;
+}
+
+.lines {
+  position: absolute;
+  top: 190px;
+  left: 110px;
+}
+
+.lines-upper{
+  position: absolute;
+  top: 60px;
+  left: -80px;
 }
 
 .line1 {
-    position: absolute;
-    width: 102px;
-    height: 2px;
-    bottom: 66.3px;
-    left: -44px;
-    background-color: var(--white);
-
+  position: absolute;
+  width: 102px;
+  height: 2px;
+  bottom: 66.3px;
+  left: -44px;
+  background-color: var(--white);
 }
 
 .line2 {
-    width: 160px;
-    height: 2px;
-    position: absolute;
-    bottom: 126.6px;
-    left: 28px;
-    background-color: var(--white);
-    transform: rotate(130deg);
+  width: 160px;
+  height: 2px;
+  position: absolute;
+  bottom: 126.6px;
+  left: 28px;
+  background-color: var(--white);
+  transform: rotate(130deg);
 }
 
 .line3 {
-    position: absolute;
-    top: 25px;
-    right: 57px;
-    width: 120px;
-    height: 2px;
-    background-color: var(--white);
-    transform: rotate(130deg);
+  position: absolute;
+  top: 25px;
+  right: 57px;
+  width: 120px;
+  height: 2px;
+  background-color: var(--white);
+  transform: rotate(130deg);
 }
 
 .line4 {
-    width: 160px;
-    height: 2px;
-    /* border:2px solid var(--white); */
-    background-color: var(--white);
-    position: absolute;
-    top: -21px;
-    right: -80px;
+  width: 160px;
+  height: 2px;
+  /* border:2px solid var(--white); */
+  background-color: var(--white);
+  position: absolute;
+  top: -21px;
+  right: -80px;
 }
 
 .lowercircle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--white);
-    bottom: 180px;
-    left: 150px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
+  bottom: 180px;
+  left: 150px;
 }
 
 .uppercircle {
-    position: absolute;
-    top: 65px;
-    right: 150px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--white);
+  position: absolute;
+  top: 65px;
+  right: 150px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
 }
 
 .lowertext {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-
-.uppertext {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 12px;
 }
 
 .lowertext_details1 {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .lowertext_details2 {
-    width: 12.5ch;
-    color: #777;
-    font-size: 16px;
-    font-weight: 400;
-
+  margin-top: -8px;
+  width: 16ch;
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
 }

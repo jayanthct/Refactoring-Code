@@ -1,61 +1,69 @@
 .banner_leftside {
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    justify-content: center;
-    gap: 24px;
-    color:var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 24px;
+  color: var(--white);
 }
 .banner_text1 {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0.64px;
-    width: 20ch;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  width: 20ch;
 }
 
 .banner_text2 {
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.32px;
-    opacity: 0.7;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  opacity: 0.7;
 }
 
-.banner_shopnow{
-     height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px;
-    gap: 8px;
-    background-color: var(--orange);
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(30px);
-    color: var(--white);
+.banner_shopnow {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+  background-color: var(--orange);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: var(--white);
 }
 
 .banner-icon {
-    color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 .banner-cart-text {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--last);
-    opacity: 0.8;
-    letter-spacing: 0.32px;
-    text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--last);
+  opacity: 0.8;
+  letter-spacing: 0.32px;
+  text-align: center;
 }
 
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 70%;
-    height: 48vh;
-    gap: 24px;
-    background: linear-gradient(180deg, rgba(206, 206, 206, 0.05) 0%, rgba(12, 12, 12, 0.05) 100%),url(./Assets/Banner_Section/images/background.svg);
-    background-: ;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 24px;
+  padding: 0 4%;
+  background: linear-gradient(
+      180deg,
+      rgba(206, 206, 206, 0.05) 0%,
+      rgba(12, 12, 12, 0.05) 100%
+    ),
+    url(./Assets/Banner_Section/images/background.svg);
+  background-size: cover;
+  max-height: 360px;
 }
+
 .banner-image{
-    width: 100%;
+    scale: 0.8;
 }
