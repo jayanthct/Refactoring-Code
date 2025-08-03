@@ -62,6 +62,10 @@
     url(./Assets/Banner_Section/images/background.svg);
   background-size: cover;
   max-height: 360px;
+
+    animation: slideInFromRight 1.2s ease forwards;
+		animation-timeline: view();
+		animation-range: entry 0% cover 40%;
 }
 
 .banner-image{

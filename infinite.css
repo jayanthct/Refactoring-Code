@@ -1,29 +1,4 @@
-#infinite{
-    background-color: var(--orange);
-    width: 100%;
-    margin: 30px 0;
-}
-.item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
 
-.scroll-bar-text {
-  font-size: 56px;
-  font-weight: 700;
-  color: var(--white);
-}
-
-.scroll-bar-content {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  white-space: nowrap;
-  animation: marquee 60s linear infinite;
-}
 
 .marquee {
     display: flex;
@@ -35,10 +10,13 @@
             hsl(0 0% 0% / 1) 20%,
             hsl(0 0% 0% / 1) 80%,
             hsl(0 0% 0% / 0));
+
+
+            overflow-y: hidden;
 }
 
 .marquee--8 {
-    --marquee-item-width: 100px;
+    --marquee-item-width: 420px;
     --marquee-item-height: 100px;
     --marquee-duration: 36s;
     --marquee-items: 8;
@@ -46,6 +24,7 @@
 
 .marquee__item {
     position: absolute;
+    scale: 1.4;
     width: var(--marquee-item-width);
     height: var(--marquee-item-height);
 }

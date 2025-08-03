@@ -16,7 +16,6 @@
   grid-row-gap: 16px;
   width: 100%;
   height: 100%;
-
 }
 .brand-name {
   font-size: 24px;
@@ -58,6 +57,10 @@
   min-height: 360px;
   width: 100%;
   position: relative;
+
+  animation: zoomIn  1.2s ease forwards;
+		animation-timeline: view();
+		animation-range: entry 0% cover 40%;
 }
 .item-top {
   background-color: var(--black);

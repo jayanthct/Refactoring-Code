@@ -2,13 +2,16 @@
   padding: 60px 0 30px;
   border-top: 4px solid rgba(255, 255, 255, 0.1);
   background: #0f0f0f;
+  width: 100%;
+  padding: 2% 4%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  animation: slideUp 1.2s ease forwards;
+		animation-timeline: view();
+		animation-range: entry 0% cover 40%;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .footer-content {
   display: grid;
