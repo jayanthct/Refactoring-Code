@@ -29,8 +29,9 @@
 
 <body>
 
+	<!-- Navigation Bar -->
 	<header class="nav">
-		<a href="#">
+		<a href="#"> 
 			<img src="./Assets/Nav Bar/Icons/logo.png" alt="" class="nav_logo">
 		</a>
 		<div class="nav-center-section">
@@ -39,11 +40,21 @@
 			<a href="#specs" class="nav-link">Specs</a>
 			<a href="#case" class="nav-link">Case</a>
 		</div>
-		<div class="cart-icon-container">
-			<img src="./Assets/Nav Bar/Icons/Cart.svg" alt="Shopping Cart" class="cart-image">
+		<div class="button-group">
+			<div class="cart-icon-container">
+		<img src="./Assets/Nav Bar/Icons/Cart.svg" alt="Shopping Cart" class="cart-image">
 			<p class="cart-count">2</p>
-		</div>
-	</header>
+			</div>
+			<label class="burger" for="burger">
+				<input type="checkbox" id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			</div>
+		</header>
+
+
 
 	<!-- Hero Section -->
 
@@ -99,7 +110,7 @@
 			<div class="vlc partner-card">
 				<img src="./Assets/Partner Section/icons/Vlc.svg" alt="VLC Logo" class="partner-icon">
 				<p class="partner-name">VLC</p>
-				<p class="partner-category" id="products">MUSIC</p>
+				<p class="partner-category">MUSIC</p>
 			</div>
 
 			<div class="prime partner-card">
@@ -140,7 +151,7 @@
 
 
 	<!-- Deals Section -->
-	<section class="deals-section">
+	<section class="deals-section" id="products">
 
 		<h1 class="heading">Choose Your <br>
 			Style</h1>
@@ -475,7 +486,18 @@
 	</footer>
 
 
+		<script>
+			document.getElementById('burger').addEventListener('change', function() {
+				document.querySelector('.nav-center-section').classList.toggle('active');
+				});
 
+					document.querySelectorAll('.nav-link').forEach(link => {
+						link.addEventListener('click', () => {
+							document.getElementById('burger').checked = false;
+							document.querySelector('.nav-center-section').classList.remove('active');
+						});
+						});
+		</script>
 </body>
 
 
