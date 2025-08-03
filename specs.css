@@ -15,7 +15,8 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	gap: 64px;
+	/* gap: 64px; */
+	padding: 0 4%;
 }
 
 .specs-leftside {
@@ -41,7 +42,7 @@
 }
 
 .headphone_image {
-	width: 80%;
+	width: 60%;
 }
 
 .spec_items {
@@ -113,8 +114,8 @@
 
 .wave {
 	position: absolute;
-	width: 16%;
-  top: 64%;
+	width: 12%;
+		top: 64%;
 
 	transform: translate(-50%, -50%);
 
@@ -155,8 +156,8 @@
 	position: absolute;
 	width: fit-content;
 
-	bottom: -82px;
-	left: 0;
+		bottom: -64px;
+		left: 136px;
 
 		animation: slideInFromLeft 1.2s ease forwards;
 	animation-timeline: view();
@@ -170,8 +171,8 @@
 	align-items: start;
 	flex-direction: column;
 	gap: 16px;
-	top: -80px;
-	right: -140px;
+		top: -48px;
+		right: -16px;
 
 		animation: slideInFromRight 1.2s ease forwards;
 	animation-timeline: view();
@@ -269,4 +270,364 @@
 	color: #777;
 	font-size: 14px;
 	font-weight: 400;
+}
+
+
+/* Tablet Portrait and Landscape */
+@media (max-width: 1024px) {
+	.specs {
+		gap: 48px;
+	}
+
+	.second_row {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.specs-leftside {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 24px;
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.spec_items {
+		gap: 8px;
+	}
+
+	.outerellipse {
+		width: 18vh;
+		height: 18vh;
+	}
+
+	.spec_number {
+		font-size: 28px;
+		letter-spacing: 0.56px;
+	}
+
+	.spec_text {
+		font-size: 14px;
+		letter-spacing: 0.28px;
+	}
+
+	.specs-rightside {
+		position: relative;
+		width: 100%;
+		height: 400px;
+	}
+
+	.headphone_image {
+		width: 60%;
+	}
+
+	.wave {
+		width: 12%;
+		top: 60%;
+	}
+
+	.specs-right-downside {
+		bottom: -60px;
+		left: 20px;
+	}
+
+	.specs-right-upside {
+		top: -60px;
+		right: -100px;
+	}
+
+	.lowertext_details1 {
+		font-size: 18px;
+	}
+
+	.lowertext_details2 {
+		font-size: 12px;
+	}
+
+	.outside_ellipse {
+		width: 60px;
+		height: 60px;
+	}
+
+	.innerside_ellipse {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) and (orientation: portrait) {
+	.specs {
+		gap: 32px;
+	}
+
+	.second_row {
+		gap: 24px;
+	}
+
+	.specs-leftside {
+		flex-direction: column;
+		gap: 20px;
+		padding: 0 16px;
+	}
+
+	.spec_items {
+		gap: 6px;
+	}
+
+	.outerellipse {
+		width: 15vh;
+		height: 15vh;
+	}
+
+	.storm_image {
+		width: 28px;
+	}
+
+	.spec_number {
+		font-size: 24px;
+		letter-spacing: 0.48px;
+	}
+
+	.spec_text {
+		font-size: 12px;
+		letter-spacing: 0.24px;
+	}
+
+	.specs-rightside {
+		height: 300px;
+		padding: 0 20px;
+	}
+
+	.headphone_image {
+		width: 80%;
+	}
+
+	.wave {
+		width: 16%;
+		top: 65%;
+	}
+
+	.specs-right-downside {
+		display: none;
+	}
+
+	.specs-right-upside {
+	display: none;
+		}
+
+		.lowertext_details1 {
+			font-size: 16px;
+		}
+
+		.lowertext_details2 {
+			font-size: 11px;
+			width: 14ch;
+		}
+
+		.outside_ellipse {
+			width: 50px;
+			height: 50px;
+		}
+
+		.innerside_ellipse {
+			width: 20px;
+			height: 20px;
+		}
+
+		.lines {
+			top: 150px;
+			left: 80px;
+		}
+
+		.lines-upper {
+			top: 40px;
+			left: -60px;
+		}
+
+		.line1, .line2, .line3, .line4 {
+			height: 1px;
+		}
+
+		.line1 {
+			width: 80px;
+			left: -30px;
+		}
+
+		.line2 {
+			width: 120px;
+			left: 20px;
+		}
+
+		.line3 {
+			width: 90px;
+			right: 40px;
+		}
+
+		.line4 {
+			width: 120px;
+			right: -60px;
+		}
+
+		.lowercircle, .uppercircle {
+			width: 16px;
+			height: 16px;
+		}
+
+		.lowercircle {
+			bottom: 140px;
+			left: 120px;
+		}
+
+		.uppercircle {
+			top: 50px;
+			right: 120px;
+		}
+}
+
+/* Mobile Landscape */
+@media (max-width: 812px) and (orientation: landscape) {
+	.specs {
+		gap: 20px;
+	}
+
+	.second_row {
+		flex-direction: row;
+		gap: 20px;
+		align-items: flex-start;
+	}
+
+	.specs-leftside {
+		flex-direction: column;
+		gap: 12px;
+		width: 40%;
+		padding: 0 10px;
+	}
+
+	.spec_items {
+		gap: 4px;
+		flex-direction: row;
+		justify-content: flex-start;
+		text-align: left;
+	}
+
+	.description {
+		align-items: flex-start;
+		gap: 4px;
+	}
+
+	.outerellipse {
+		width: 10vh;
+		height: 10vh;
+		flex-shrink: 0;
+	}
+
+	.storm_image {
+		width: 20px;
+	}
+
+	.spec_number {
+		font-size: 18px;
+		letter-spacing: 0.36px;
+	}
+
+	.spec_text {
+		font-size: 10px;
+		letter-spacing: 0.2px;
+	}
+
+	.specs-rightside {
+		width: 60%;
+		height: 250px;
+	}
+
+	.headphone_image {
+		width: 70%;
+	}
+
+	.wave {
+		width: 10%;
+		top: 55%;
+	}
+
+	.specs-right-downside {
+		bottom: -30px;
+		left: 5px;
+		gap: 8px;
+	}
+
+	.specs-right-upside {
+		top: -30px;
+		right: -50px;
+		gap: 8px;
+	}
+
+	.lowertext_details1 {
+		font-size: 14px;
+	}
+
+	.lowertext_details2 {
+		font-size: 9px;
+		width: 12ch;
+	}
+
+	.outside_ellipse {
+		width: 40px;
+		height: 40px;
+	}
+
+	.innerside_ellipse {
+		width: 16px;
+		height: 16px;
+	}
+
+	.lines {
+		top: 80px;
+		left: 50px;
+	}
+
+	.lines-upper {
+		top: 20px;
+		left: -40px;
+	}
+
+	.line1, .line2, .line3, .line4 {
+		height: 1px;
+	}
+
+	.line1 {
+		width: 60px;
+		left: -20px;
+	}
+
+	.line2 {
+		width: 80px;
+		left: 15px;
+	}
+
+	.line3 {
+		width: 60px;
+		right: 30px;
+	}
+
+	.line4 {
+		width: 80px;
+		right: -40px;
+	}
+
+	.lowercircle, .uppercircle {
+		width: 12px;
+		height: 12px;
+	}
+
+	.lowercircle {
+		bottom: 80px;
+		left: 80px;
+	}
+
+	.uppercircle {
+		top: 30px;
+		right: 80px;
+	}
 }

@@ -103,3 +103,172 @@
   left: 52%;
   cursor: pointer;
 }
+
+/* Tablet Portrait and Landscape */
+@media (max-width: 1024px) {
+    .deals-section {
+        gap: 32px;
+    }
+    
+    .deals-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+        padding: 0px 2%;
+    }
+    
+    .grid-items {
+        min-height: 320px;
+    }
+    
+    .brand-name {
+        font-size: 22px;
+        letter-spacing: 0.66px;
+    }
+    
+    .item-price {
+        font-size: 36px;
+        letter-spacing: 0.72px;
+    }
+    
+    .add-button {
+        width: 36px;
+        height: 28px;
+    }
+    
+    .item-bottom {
+        padding: 0px 24px;
+    }
+    
+    .item-image {
+        width: 45%;
+        top: 34%;
+    }
+    
+    .explore-text {
+        font-size: 17px;
+        letter-spacing: 0.34px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) and (orientation: portrait) {
+    .deals-section {
+        gap: 24px;
+        margin: 24px 0px ;
+    }
+    
+    .deals-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 16px;
+        padding: 0px 4%;
+    }
+    
+    .grid-items {
+        min-height: 280px;
+    }
+    
+    .brand-name {
+        font-size: 20px;
+        letter-spacing: 0.6px;
+    }
+    
+    .item-price {
+        font-size: 28px;
+        letter-spacing: 0.56px;
+    }
+    
+    .add-button {
+        width: 32px;
+        height: 24px;
+    }
+    
+    .add-icon {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .item-bottom {
+        padding: 0px 20px;
+    }
+    
+    .item-image {
+        width: 60%;
+        top: 40%;
+    }
+    
+    .explore-text {
+        font-size: 16px;
+        letter-spacing: 0.32px;
+    }
+    
+    .explore-arrow-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 812px) and (orientation: landscape) {
+    .deals-section {
+        gap: 20px;
+    }
+    
+    .deals-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+        padding: 0px 2%;
+    }
+    
+    .grid-items {
+        min-height: 200px;
+    }
+    
+    .brand-name {
+        font-size: 16px;
+        letter-spacing: 0.48px;
+    }
+    
+    .item-price {
+        font-size: 24px;
+        letter-spacing: 0.48px;
+    }
+    
+    .add-button {
+        width: 28px;
+        height: 22px;
+    }
+    
+    .add-icon {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .item-bottom {
+        padding: 0px 16px;
+    }
+    
+    .item-image {
+        width: 35%;
+        top: 30%;
+    }
+    
+    .explore-text {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+    
+    .explore-arrow-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .item-image:hover {
+        scale: 1.05;
+        left: 51%;
+    }
+}
